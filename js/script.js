@@ -127,14 +127,16 @@ const objIcons = [
 const eleContainer = document.querySelector('.container');
 for (let i = 0; i < objIcons.length; i++) {
 	const eleCard = document.createElement('div');
+    const eleIcon = document.createElement('div');
 	const eleP = document.createElement('p');
 
     eleCard.classList.add('box')
+    eleIcon.classList.add('icon')
 
+	eleCard.append(eleIcon);
 	eleCard.append(eleP);
 	eleContainer.append(eleCard);
     eleP.append(objIcons[i].name.toUpperCase());
-
 }
 
 /*

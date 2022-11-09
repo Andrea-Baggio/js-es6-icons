@@ -4,11 +4,32 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(244, 244, 244);
+}
+
+header {
+    background-color: white;
+
+}
+
+h1 {
+    padding: .5rem 1.5rem;
+}
+
+nav {
+    background-color: rgb(103, 179, 255);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 .container {
-    height: 100vh;
+    height: calc(100vh - 93px);
     max-width: 900px;
     margin: auto;
-    border: 2px solid red;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -17,5 +38,6 @@
 }
 
 .box {
-    border: 2px solid green;
+    border: 1px solid black;
+    border-radius: 5px;
 }
