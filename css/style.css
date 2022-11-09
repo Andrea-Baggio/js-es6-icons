@@ -5,12 +5,11 @@
 }
 
 body {
-    background-color: rgb(244, 244, 244);
+    background-color: rgb(230, 230, 230);
 }
 
 header {
     background-color: white;
-
 }
 
 h1 {
@@ -19,7 +18,7 @@ h1 {
 
 nav {
     background-color: rgb(103, 179, 255);
-    height: 40px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,17 +26,18 @@ nav {
 }
 
 .container {
-    height: calc(100vh - 93px);
+    height: calc(100vh - 103px);
     max-width: 900px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    flex-basis: calc(100% / 5);
+    gap: 30px;
 }
 
 .box {
+    flex-basis: calc((100% / 5) - 30px);
+    background-color: white;
     border: 1px solid black;
     border-radius: 5px;
 }

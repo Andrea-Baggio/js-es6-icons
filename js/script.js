@@ -128,21 +128,24 @@ const eleContainer = document.querySelector('.container');
 for (let i = 0; i < objIcons.length; i++) {
 	const eleCard = document.createElement('div');
     const eleIcon = document.createElement('div');
+    const eleI = document.createElement('i');
 	const eleP = document.createElement('p');
 
     eleCard.classList.add('box')
     eleIcon.classList.add('icon')
+    eleI.classList.add(objIcons[i].family, objIcons[i].prefix + objIcons[i].name);
 
 	eleCard.append(eleIcon);
 	eleCard.append(eleP);
 	eleContainer.append(eleCard);
+    eleIcon.append(eleI);
+
+    // eleI.innerHTML += 
     eleP.append(objIcons[i].name.toUpperCase());
 }
 
-/*
-name: 'cat',
-prefix: 'fa-',
-type: 'animal',
-family: 'fas',
-color: 'orange'
-*/
+
+//<i></i>
+
+//<i class="fa-thin fa-carrot"></i>
+
