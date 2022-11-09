@@ -1,8 +1,4 @@
 /*
-Milestone 1
-Partendo dalla struttura dati fornita, visualizzare in pagina un box per ogni icona, in cui è presente il nome dell'icona e l'icona stessa.
-Milestone 2
-Ciascuna icona ha una proprietà "color": utilizzare questa proprietà per visualizzare le icone del colore corrispondente.
 Milestone 3
 Aggiungere alla pagina una select in cui le options corrispondono ai vari tipi di icone (animal, vegetable, user). Quando l'utente seleziona un tipo dalla select, visualizzare solamente le icone corrispondenti.
 */
@@ -125,27 +121,23 @@ const objIcons = [
 
 
 const eleContainer = document.querySelector('.container');
+
 for (let i = 0; i < objIcons.length; i++) {
 	const eleCard = document.createElement('div');
-    const eleIcon = document.createElement('div');
+    const eleContainerIcon = document.createElement('div');
     const eleI = document.createElement('i');
 	const eleP = document.createElement('p');
 
     eleCard.classList.add('box')
-    eleIcon.classList.add('icon')
+    eleContainerIcon.classList.add('container-icon')
     eleI.classList.add(objIcons[i].family, objIcons[i].prefix + objIcons[i].name);
+    eleI.style.color = objIcons[i].color;
 
-	eleCard.append(eleIcon);
+	eleCard.append(eleContainerIcon);
 	eleCard.append(eleP);
 	eleContainer.append(eleCard);
-    eleIcon.append(eleI);
+    eleContainerIcon.append(eleI);
 
-    // eleI.innerHTML += 
     eleP.append(objIcons[i].name.toUpperCase());
 }
-
-
-//<i></i>
-
-//<i class="fa-thin fa-carrot"></i>
 

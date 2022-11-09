@@ -27,7 +27,8 @@ nav {
 
 .container {
     height: calc(100vh - 103px);
-    max-width: 1100px;
+    max-width: 900px;
+    font-size: .8em;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -45,7 +46,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: .5rem;
 }
 
 .box:hover{
@@ -54,5 +55,5 @@ nav {
 }
 
 i {
-    font-size: 2em;
+    font-size: 2.4em;
 }
