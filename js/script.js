@@ -122,3 +122,26 @@ const objIcons = [
 		color: 'blue'
 	}
 ];
+
+
+const eleContainer = document.querySelector('.container');
+for (let i = 0; i < objIcons.length; i++) {
+	const eleImg = document.createElement('img');
+	const eleCard = document.createElement('div');
+	const eleP = document.createElement('p');
+
+    eleCard.classList.add('box')
+
+	eleCard.append(eleImg);
+	eleCard.append(eleP);
+	eleContainer.append(eleCard);
+    eleP.append(objIcons[i].name.toUpperCase())
+}
+
+/*
+name: 'cat',
+prefix: 'fa-',
+type: 'animal',
+family: 'fas',
+color: 'orange'
+*/
